@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Heavy</string>
+            <string>Avenir-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="RecipeView" customModule="ChewsRite" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="292"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="roasted-broccoli-and-fregola-sarda-salad" translatesAutoresizingMaskIntoConstraints="NO" id="Hnu-iT-RfW">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="165"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="165" id="ABe-ph-1sN"/>
+                    </constraints>
+                </imageView>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3g-GU-fm8">
+                    <rect key="frame" x="0.0" y="165" width="200" height="127"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rating" translatesAutoresizingMaskIntoConstraints="NO" id="9bG-Bz-djd">
+                            <rect key="frame" x="7" y="21" width="50" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="AOg-s1-BSc"/>
+                                <constraint firstAttribute="height" constant="10" id="Ftm-1G-GJX"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZk-pc-iVf">
+                            <rect key="frame" x="7" y="31" width="37" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="2w5-em-eFZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afa-bI-wm9">
+                            <rect key="frame" x="7" y="76" width="32" height="18"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
+                            <color key="textColor" red="0.35686274509999999" green="0.36078431370000003" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9e-rG-Q5q">
+                            <rect key="frame" x="7" y="99" width="33" height="18"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="9bG-Bz-djd" firstAttribute="leading" secondItem="DZk-pc-iVf" secondAttribute="leading" id="0Q9-gs-kdL"/>
+                        <constraint firstItem="DZk-pc-iVf" firstAttribute="top" secondItem="9bG-Bz-djd" secondAttribute="bottom" id="Cc2-0A-2gj"/>
+                        <constraint firstItem="C9e-rG-Q5q" firstAttribute="leading" secondItem="i3g-GU-fm8" secondAttribute="leading" constant="7" id="PTT-fZ-foP"/>
+                        <constraint firstItem="afa-bI-wm9" firstAttribute="top" secondItem="DZk-pc-iVf" secondAttribute="bottom" constant="5" id="YOp-er-7iJ"/>
+                        <constraint firstAttribute="bottom" secondItem="C9e-rG-Q5q" secondAttribute="bottom" constant="10" id="cIe-4J-5Ni"/>
+                        <constraint firstItem="afa-bI-wm9" firstAttribute="leading" secondItem="C9e-rG-Q5q" secondAttribute="leading" id="pJq-cq-DFA"/>
+                        <constraint firstItem="C9e-rG-Q5q" firstAttribute="top" secondItem="afa-bI-wm9" secondAttribute="bottom" constant="5" id="sed-u7-aUM"/>
+                        <constraint firstItem="DZk-pc-iVf" firstAttribute="leading" secondItem="afa-bI-wm9" secondAttribute="leading" id="vdr-GM-Ynn"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTD-EM-qKf">
+                    <rect key="frame" x="155" y="122" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Sm1-Ti-xBQ"/>
+                        <constraint firstAttribute="width" constant="35" id="XGH-WH-c4Z"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="addToFavorites"/>
+                    <connections>
+                        <action selector="manageFavorite:" destination="iN0-l3-epB" eventType="touchUpInside" id="Nos-mw-6ya"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="i3g-GU-fm8" firstAttribute="top" secondItem="ZTD-EM-qKf" secondAttribute="bottom" constant="8" id="1S7-Hr-yt1"/>
+                <constraint firstItem="Hnu-iT-RfW" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="3vF-Ru-kN6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZTD-EM-qKf" secondAttribute="trailing" constant="10" id="Co7-lc-vwZ"/>
+                <constraint firstItem="i3g-GU-fm8" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="KOp-D7-QXB"/>
+                <constraint firstItem="i3g-GU-fm8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Zrd-De-L0a"/>
+                <constraint firstItem="i3g-GU-fm8" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="edh-VT-1xm"/>
+                <constraint firstItem="Hnu-iT-RfW" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="eh6-zU-6kL"/>
+                <constraint firstItem="Hnu-iT-RfW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="lDe-3Y-pxY"/>
+                <constraint firstItem="i3g-GU-fm8" firstAttribute="top" secondItem="Hnu-iT-RfW" secondAttribute="bottom" id="mcv-Yu-aGx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="favoriteBtn" destination="ZTD-EM-qKf" id="vVH-1n-W5h"/>
+                <outlet property="headerLbl" destination="DZk-pc-iVf" id="JQX-Hf-o6X"/>
+                <outlet property="infoLbl" destination="afa-bI-wm9" id="D98-Yn-fdI"/>
+                <outlet property="recipeIV" destination="Hnu-iT-RfW" id="nP4-hj-xTj"/>
+                <outlet property="sourceLbl" destination="C9e-rG-Q5q" id="ZBO-T6-6Zq"/>
+                <outlet property="starsIV" destination="9bG-Bz-djd" id="YQt-BN-3cm"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="addToFavorites" width="32" height="32"/>
+        <image name="rating" width="53" height="10"/>
+        <image name="roasted-broccoli-and-fregola-sarda-salad" width="1170" height="780"/>
+    </resources>
+</document>
